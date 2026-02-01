@@ -993,7 +993,7 @@ const plants = [
      categories: ["Méditerranéennes", "Jardin"],
      image: "viburnum-tinus.jpg"
   },
-   {
+  {
      id: 44,
      nomFr: "Arbre à perruques",
      nomSci: "Cotinus coggygria",
@@ -1015,8 +1015,8 @@ const plants = [
      dateAjout: "2026-02-01",
      categories: ["Fleurs", "Jardin"],
      image: "cotinus-coggygria.jpg"
-   },
-   {
+  },
+  {
      id: 45,
      nomFr: "Sumac amarante",
      nomSci: "Rhus typhina",
@@ -1038,8 +1038,8 @@ const plants = [
      dateAjout: "2026-02-01",
      categories: ["Jardin"],
      image: "rhus-typhina.jpg"
-   },
-   {
+  },
+  {
      id: 46,
      nomFr: "Fenouil",
      nomSci: "Foeniculum vulgare",
@@ -1061,7 +1061,7 @@ const plants = [
      dateAjout: "2026-02-01",
      categories: ["Aromatiques", "Méditerranéennes", "Jardin"],
      image: "foeniculum-vulgare.jpg"
-   },
+  },
 ];
 
 /* ----------------------------------------------------
