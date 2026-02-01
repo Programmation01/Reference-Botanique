@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Référence Botanique - Catégories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Bouton retour -->
+<div class="top-bar">
+  <button class="back-btn" onclick="history.back()">← Retour</button>
+
+  <input 
+    type="search" 
+    id="searchInput" 
+    class="search-input"
+    placeholder="Rechercher une plante..."
+    aria-label="Recherche"
+  >
+</div>
+
+<h1 class="title">Catégories</h1>
+
+<!-- SECTION CATÉGORIES -->
+<section>
+  <h2 style="padding-left:5vw;">Catégories</h2>
+  <div id="categories-container" class="grid"></div>
+</section>
+
+<!-- SECTION RÉCEMMENT AJOUTÉ -->
+<section>
+  <h2 style="padding-left:5vw;">Récemment ajouté</h2>
+  <div id="recent-container" class="grid"></div>
+</section>
+
+<!-- SECTION PLANTES POPULAIRES -->
+<section>
+  <h2 style="padding-left:5vw;">Plantes populaires</h2>
+  <div id="popular-container" class="grid"></div>
+</section>
+
+<!-- SECTION PLANTES DE SAISON -->
+<section>
+  <h2 style="padding-left:5vw;">Plantes de saison</h2>
+  <div id="season-container" class="grid"></div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Référence Botanique - Liste des plantes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Bouton retour -->
+<div class="top-bar">
+  <button class="back-btn" onclick="history.back()">← Retour</button>
+
+  <input 
+    type="search" 
+    id="searchInput" 
+    class="search-input"
+    placeholder="Rechercher une plante..."
+    aria-label="Recherche"
+  >
+</div>
+
+<h1 class="title">Plantes référencées</h1>
+
+<div class="layout">
+
+  <!-- FILTRES À GAUCHE -->
+  <aside class="filters">
+    <h2>Filtres</h2>
+
+    <h3>Type</h3>
+    <label><input type="checkbox" class="filter-type" value="arbre"> Arbre</label>
+    <label><input type="checkbox" class="filter-type" value="plante"> Plante</label>
+    <label><input type="checkbox" class="filter-type" value="fleur"> Fleur</label>
+    <label><input type="checkbox" class="filter-type" value="succulente"> Succulente</label>
+
+    <h3>Usage</h3>
+    <label><input type="checkbox" class="filter-usage" value="médicinale"> Médicinale</label>
+    <label><input type="checkbox" class="filter-usage" value="ornementale"> Ornementale</label>
+    <label><input type="checkbox" class="filter-usage" value="alimentaire"> Alimentaire</label>
+    <label><input type="checkbox" class="filter-usage" value="toxique"> Toxique</label>
+
+    <h3>Environnement</h3>
+    <label><input type="checkbox" class="filter-env" value="intérieur"> Intérieur</label>
+    <label><input type="checkbox" class="filter-env" value="extérieur"> Extérieur</label>
+    <label><input type="checkbox" class="filter-env" value="tropical"> Tropical</label>
+    <label><input type="checkbox" class="filter-env" value="méditerranéen"> Méditerranéen</label>
+  </aside>
+
+  <!-- LISTE DES PLANTES -->
+  <section class="plants">
+    <h2>Résultats</h2>
+    <div id="plants-container" class="grid"></div>
+  </section>
+
+</div>
+
+</body>
+</html>

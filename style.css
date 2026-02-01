@@ -1,0 +1,297 @@
+/* ----------------------------------------------------
+   RESET & BASE
+---------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f5f7f5;
+  color: #1f2933;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ----------------------------------------------------
+   TITRES & BOUTONS
+---------------------------------------------------- */
+
+.title {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.btn {
+  display: inline-block;
+  background: #22c55e;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #16a34a;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5vw;
+  gap: 1rem;
+}
+
+.back-btn {
+  background: #f2f2f2;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.search-input {
+  flex: 1;
+  max-width: 420px;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #6fbf73; /* vert doux, cohérent plantes */
+}
+
+.back-btn {
+  background: #e5e7eb;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.back-btn:hover {
+  background: #d1d5db;
+}
+.title {
+  position: relative;
+  text-align: center;
+  margin: 2rem 0 1rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: white;
+  padding: 4rem 1rem;
+  overflow: hidden;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("background-plants.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+  z-index: -1;
+}
+
+/* ----------------------------------------------------
+   PAGE ACCUEIL (HERO)
+---------------------------------------------------- */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* ----------------------------------------------------
+   GRILLES & CARTES
+---------------------------------------------------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 1rem 5vw;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
+
+.card-img-wrapper {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.card-sub {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.card-tag {
+  display: inline-block;
+  background: #e2fbe8;
+  color: #166534;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  margin-right: 0.2rem;
+  margin-top: 0.3rem;
+}
+
+/* ----------------------------------------------------
+   LAYOUT FILTRES + LISTE
+---------------------------------------------------- */
+
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 1.5rem;
+  padding: 1rem 5vw;
+}
+
+.filters {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  height: fit-content;
+}
+
+.filters h2 {
+  margin-bottom: 1rem;
+}
+
+.filters h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+.filters label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+/* ----------------------------------------------------
+   FICHE PLANTE
+---------------------------------------------------- */
+
+.fiche-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.7rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+
+.fiche-image-wrapper {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.fiche-image {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  object-fit: cover;
+}
+
+.fiche-block {
+  margin-bottom: 1.5rem;
+}
+
+.fiche-block p {
+  margin-bottom: 0.4rem;
+}
+
+/* ----------------------------------------------------
+   RESPONSIVE
+---------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Référence Botanique - Fiche Plante</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Bouton retour -->
+<div class="top-bar">
+  <button class="back-btn" onclick="history.back()">← Retour</button>
+</div>
+
+<h1 class="title" id="fiche-title">Fiche plante</h1>
+
+<div class="fiche-container">
+
+  <!-- IMAGE DE LA PLANTE -->
+  <div class="fiche-image-wrapper">
+    <img id="f-image" src="" alt="Image de la plante" class="fiche-image">
+  </div>
+
+  <!-- BLOC 1 : NOMS -->
+  <div class="fiche-block">
+    <p><strong>Nom français :</strong> <span id="f-nomFr"></span></p>
+    <p><strong>Nom scientifique :</strong> <span id="f-nomSci"></span></p>
+    <p><strong>Nom anglais :</strong> <span id="f-nomEn"></span></p>
+    <p><strong>Nom latin :</strong> <span id="f-nomLatin"></span></p>
+  </div>
+
+  <!-- BLOC 2 : CLASSIFICATION -->
+  <div class="fiche-block">
+    <p><strong>Famille :</strong> <span id="f-famille"></span></p>
+    <p><strong>Genre :</strong> <span id="f-genre"></span></p>
+    <p><strong>Espèce :</strong> <span id="f-espece"></span></p>
+    <p><strong>ID Taxon :</strong> <span id="f-idTaxon"></span></p>
+  </div>
+
+  <!-- BLOC 3 : INFORMATIONS BOTANIQUES -->
+  <div class="fiche-block">
+    <p><strong>Besoins :</strong> <span id="f-besoins"></span></p>
+    <p><strong>Avantages :</strong> <span id="f-avantages"></span></p>
+    <p><strong>Origine :</strong> <span id="f-origine"></span></p>
+    <p><strong>Saison :</strong> <span id="f-saison"></span></p>
+  </div>
+
+</div>
+
+</body>
+</html>
