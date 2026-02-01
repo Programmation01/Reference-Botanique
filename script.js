@@ -991,7 +991,7 @@ const plants = [
      saisonniere: false,
      dateAjout: "2026-02-01",
      categories: ["Méditerranéennes", "Jardin"],
-     image: "images/viburnum-tinus.jpg"
+     image: "viburnum-tinus.jpg"
   },
    {
      id: 44,
@@ -1014,7 +1014,7 @@ const plants = [
      saisonniere: true,
      dateAjout: "2026-02-01",
      categories: ["Fleurs", "Jardin"],
-     image: "images/cotinus-coggygria.jpg"
+     image: "cotinus-coggygria.jpg"
    },
    {
      id: 45,
@@ -1037,7 +1037,7 @@ const plants = [
      saisonniere: true,
      dateAjout: "2026-02-01",
      categories: ["Jardin"],
-     image: "images/rhus-typhina.jpg"
+     image: "rhus-typhina.jpg"
    },
    {
      id: 46,
@@ -1060,7 +1060,7 @@ const plants = [
      saisonniere: true,
      dateAjout: "2026-02-01",
      categories: ["Aromatiques", "Méditerranéennes", "Jardin"],
-     image: "images/foeniculum-vulgare.jpg"
+     image: "foeniculum-vulgare.jpg"
    },
 ];
 
